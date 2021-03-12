@@ -1,4 +1,5 @@
 {
+  "homepage": "http://beatrizsabbatini.github.io/react-animations-css",
   "name": "animations-with-react",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +61,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.2.1"
   }
 }

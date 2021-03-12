@@ -18,6 +18,20 @@ const Routes: React.FC = () => {
       <Route path="/transforms3D" component={Transforms3D} />
       <Route path="/lottie" component={Lottie} />
       <Route path="/mix" component={Mix} />
+
+      {/* para o github pages:  */}
+      <Route exact path="/react-animations-css/" component={Home} />
+      <Route path="/react-animations-css/transitions" component={Transitions} />
+      <Route
+        path="/react-animations-css/transforms2D"
+        component={Transforms2D}
+      />
+      <Route
+        path="/react-animations-css/transforms3D"
+        component={Transforms3D}
+      />
+      <Route path="/react-animations-css/lottie" component={Lottie} />
+      <Route path="/react-animations-css/mix" component={Mix} />
     </Switch>
   );
 };
