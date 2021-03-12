@@ -25,6 +25,7 @@ export const ExampleContainer = styled.div`
     margin: 20px;
     margin-right: auto;
     margin-left: auto;
+
     transition: transform 1s;
   }
 

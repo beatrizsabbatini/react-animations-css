@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import styled, { css } from "styled-components";
 
 interface TimingFunctionProps {
@@ -12,6 +11,32 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const OneAnimationExample = styled.div`
+  margin: 3vh 0;
+
+  button {
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: #868ed6;
+
+    //responsavel pela animação de Transition
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+
+    &:hover {
+      background-color: #86d686;
+    }
+  }
+`;
+
+// transition: background-color 1s ease 0.5s;
+// transition: background-color 1s ease 0.5s, border-radius 1s ease 0.5s;
 
 export const TimingFunctionExample = styled.div<TimingFunctionProps>`
   width: 960px;
@@ -29,6 +54,7 @@ export const TimingFunctionExample = styled.div<TimingFunctionProps>`
     align-items: center;
     font-size: 12px;
 
+    //implementação da transition e transform
     transition-property: translate();
     transition-duration: 3s;
 
@@ -79,7 +105,7 @@ export const StartAnimationButton = styled.div`
   cursor: pointer;
 `;
 
-export const SecondExample = styled.div`
+export const MultipleAnimationsExample = styled.div`
   margin: 3vh 0;
 
   button {
@@ -89,6 +115,8 @@ export const SecondExample = styled.div`
     color: white;
     border: none;
     background-color: #868ed6;
+
+    //responsavel pela animação de Transition
     transition: all 1s ease-in 1s;
 
     &:hover {

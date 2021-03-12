@@ -4,14 +4,23 @@ import {
   Container,
   TimingFunctionExample,
   StartAnimationButton,
-  SecondExample,
+  MultipleAnimationsExample,
+  OneAnimationExample,
 } from "./styles";
 
 const Transitions: React.FC = () => {
   const [startAnimation, setStartAnimation] = useState(false);
+
   return (
     <Container>
+      <h1>Transitions - Example with 1 animation </h1>
+
+      <OneAnimationExample>
+        <button type="button">Button</button>
+      </OneAnimationExample>
+
       <h1>Transitions - Timing Functions</h1>
+
       <TimingFunctionExample shouldStartAnimation={startAnimation}>
         <div>Ease (Default)</div>
         <div>Linear</div>
@@ -24,11 +33,11 @@ const Transitions: React.FC = () => {
         Start Animation
       </StartAnimationButton>
 
-      <h1>Transitions - Example with 1 line of code </h1>
+      <h1>Transitions - Example with 1 multiple animations </h1>
 
-      <SecondExample>
+      <MultipleAnimationsExample>
         <button type="button">Second Example</button>
-      </SecondExample>
+      </MultipleAnimationsExample>
     </Container>
   );
 };

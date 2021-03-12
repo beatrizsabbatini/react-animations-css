@@ -18,6 +18,7 @@ export const Container = styled.div`
     display: block;
     margin: auto;
     margin-top: 200px;
+
     transition: transform 1s;
   }
 
@@ -35,6 +36,7 @@ export const SecondExampleContainer = styled.div`
     width: 300px;
     display: block;
     margin-left: 50px;
+
     transition: transform 1s;
 
     &:nth-child(1):hover {
